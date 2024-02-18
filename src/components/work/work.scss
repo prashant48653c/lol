@@ -1,0 +1,112 @@
+
+ //   work section 
+ .work-flex {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+
+    .para-head {
+        margin-bottom: 3rem;
+    }
+}
+
+.company-icon {
+    border-radius: 30rem;
+}
+
+.work {
+    border-bottom: 1px solid #323232;
+    max-width: 100%;
+    opacity: .95;
+    display: flex;
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.5rem;
+    align-self: stretch;
+
+    .work-company {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+
+        .img {
+            width: 3.25rem;
+            height: 3.25rem;
+
+            flex-shrink: 0;
+        }
+
+        h6 {
+            color: var(--Text-Color-White, #FFF);
+            font-family: var(--roboto);
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        p {
+            color: var(--Text-Color-Neutral-2, #D3D3D3);
+            font-family: var(--roboto);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+    }
+
+    .date {
+        width: 10.625rem;
+        flex-shrink: 0;
+        opacity: 0.6;
+        color: var(--Text-Color-Neutral);
+        
+    }
+}
+
+.no-border {
+    border-bottom: none;
+}
+
+.highlight {
+    transition: all .3s linear;
+   
+}
+
+.work:hover .highlight{
+    opacity: 0.8;
+    color: white !important;
+}
+
+@media (max-width:400px) {
+    .work{
+        
+        gap: 0rem;
+        max-width: 100%;
+    }
+    .date{
+        width: fit-content;
+        text-align: right;
+    }
+
+    .work-flex {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        align-self: stretch;
+    
+        .para-head {
+            margin-bottom: 3rem;
+        }
+    }
+   
+   
+}

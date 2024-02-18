@@ -1,0 +1,72 @@
+
+.footer-flex {
+    position: relative;
+}
+.link-to{
+ 
+    cursor: pointer;
+}
+
+.dot::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: rgb(60, 174, 89);
+    }
+
+    50% {
+        background-color: rgb(1, 255, 14);
+    }
+
+    100% {
+        background-color: rgb(60, 174, 89);
+    }
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        gap: 2.35rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width:400px) {
+    .footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+         
+        
+    
+        div {
+            display: flex;
+            gap: 1.35rem;
+            padding-bottom: 5rem;
+        }
+    }
+    .footer-flex{
+        padding-left: 1rem;
+    }
+    .dot::before{
+        position: absolute;
+    top: 1px;
+    left: -5px;
+    }
+    
+    
+}
